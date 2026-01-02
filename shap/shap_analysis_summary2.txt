@@ -1,0 +1,37 @@
+
+SHAP ANALYSIS COMPLETE
+
+Model Base Value (Expected): £176.50
+
+TOP 5 DRIVERS:
+                feature  importance
+        bedrooms_filled   35.816299
+           accommodates   27.993719
+neighborhood_price_mean   24.250061
+   distance_from_center   18.800955
+              bathrooms   10.627800
+
+KEY INSIGHTS:
+1. bedrooms_filled: Higher bedrooms_filled → higher price
+2. accommodates: Higher accommodates → higher price
+3. neighborhood_price_mean: Higher neighborhood_price_mean → higher price
+
+VISUALIZATIONS CREATED:
+- shap_summary_plot.png (beeswarm - feature impact distribution)
+- shap_bar_plot.png (mean importance)
+- shap_dependence_plots.png (top 4 feature relationships)
+- shap_force_high.png (high price explanation)
+- shap_force_low.png (low price explanation)
+- shap_interaction_top.png (top interaction)
+- shap_waterfall_median.png (median case breakdown)
+
+DATA FILES SAVED:
+- shap_feature_importance.csv
+- shap_business_insights.csv
+- shap_impact_quantification.csv
+
+NEXT STEPS:
+1. Review visualizations
+2. Extract business recommendations
+3. Update Streamlit app with insights
+4. Document findings in README

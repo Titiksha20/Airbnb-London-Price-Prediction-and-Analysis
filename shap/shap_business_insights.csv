@@ -1,0 +1,11 @@
+Feature,Avg Impact,Direction,Insight
+bedrooms_filled,£35.82,positive,Higher bedrooms_filled → higher price
+accommodates,£27.99,positive,Higher accommodates → higher price
+neighborhood_price_mean,£24.25,positive,Higher neighborhood_price_mean → higher price
+distance_from_center,£18.80,negative,Higher distance_from_center → lower price
+bathrooms,£10.63,positive,Higher bathrooms → higher price
+availability_365,£8.33,positive,Higher availability_365 → higher price
+review_recency,£7.86,negative,Higher review_recency → lower price
+has_dishwasher,£7.69,positive,Higher has_dishwasher → higher price
+latitude,£7.18,positive,Higher latitude → higher price
+avg_review_score,£6.98,positive,Higher avg_review_score → higher price

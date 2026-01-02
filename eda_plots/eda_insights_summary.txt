@@ -1,0 +1,11 @@
+EDA Insights Summary - Inside Airbnb London
+
+- Median price: £135.00, Mean price: £176.53
+- Most common room type: Entire home/apt (68.7%)
+- Most listings accommodate 2 guests
+- Each additional guest adds ~£31.03 to price
+- Superhost premium: 9.8% (£16.94 per night)
+- Listings with reviews: 77.8%
+- Most expensive neighborhood: City of London (£287.09)
+- Cheapest neighborhood: Sutton (£98.27)
+- Strongest price predictor: accommodates (r=0.516)

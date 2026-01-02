@@ -1,0 +1,24 @@
+FINAL DATA CLEANING REPORT
+KEY DECISIONS:
+
+1. REVIEW SCORES:
+   - Created has_review_scores_* flags (0/1)
+   - Created review_scores_*_filled with median
+   - REASON: Avoid penalizing new listings with 0 scores
+
+2. DAYS SINCE REVIEW:
+   - Created days_since_last_review feature
+   - Set to 9999 for never-reviewed listings
+   - Created has_last_review flag
+
+3. HOST ACCEPTANCE RATE:
+   - Filled with MEDIAN (not 0%)
+   - Created host_acceptance_missing flag
+   - REASON: 0% too pessimistic for new hosts
+
+4. SUPERHOST:
+   - Filled missing with 'f' (not superhost)
+   - REASON: Platform conservative, safe assumption
+
+Final dataset: 60,796 rows × 70 columns
+Ready for modeling!

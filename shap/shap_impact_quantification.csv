@@ -1,0 +1,10 @@
+Feature,Impact per Unit,R²,P-value
+bedrooms_filled,£40.57,0.856,0.0000
+accommodates,£14.04,0.890,0.0000
+neighborhood_price_mean,£0.50,0.906,0.0000
+distance_from_center,£-2.19,0.548,0.0000
+bathrooms,£18.66,0.566,0.0000
+availability_365,£0.05,0.227,0.0000
+has_dishwasher,£16.01,0.841,0.0000
+latitude,£18.47,0.010,0.0016
+avg_review_score,£12.04,0.344,0.0000

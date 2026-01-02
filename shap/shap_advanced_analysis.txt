@@ -1,0 +1,290 @@
+TOP 20 FEATURE INTERACTIONS
+
+Interaction Strength = How much features work together to affect price
+Higher value = Stronger interaction effect
+
+63. bedrooms_filled × bathrooms
+   Interaction Strength: 4.70
+   bedrooms_filled main effect: 43.77
+   bathrooms main effect: 12.39
+   Relative to main: 10.7%
+
+1. accommodates × bedrooms_filled
+   Interaction Strength: 3.80
+   accommodates main effect: 34.36
+   bedrooms_filled main effect: 43.77
+   Relative to main: 11.1%
+
+91. bedrooms_filled × neighborhood_price_mean
+   Interaction Strength: 3.70
+   bedrooms_filled main effect: 43.77
+   neighborhood_price_mean main effect: 26.21
+   Relative to main: 8.4%
+
+3. accommodates × bathrooms
+   Interaction Strength: 2.97
+   accommodates main effect: 34.36
+   bathrooms main effect: 12.39
+   Relative to main: 8.6%
+
+1364. longitude × distance_from_center
+   Interaction Strength: 2.15
+   longitude main effect: 4.22
+   distance_from_center main effect: 19.56
+   Relative to main: 50.9%
+
+90. bedrooms_filled × distance_from_center
+   Interaction Strength: 1.75
+   bedrooms_filled main effect: 43.77
+   distance_from_center main effect: 19.56
+   Relative to main: 4.0%
+
+208. bathrooms × neighborhood_price_mean
+   Interaction Strength: 1.70
+   bathrooms main effect: 12.39
+   neighborhood_price_mean main effect: 26.21
+   Relative to main: 13.7%
+
+1365. longitude × neighborhood_price_mean
+   Interaction Strength: 1.49
+   longitude main effect: 4.22
+   neighborhood_price_mean main effect: 26.21
+   Relative to main: 35.5%
+
+1333. latitude × neighborhood_price_mean
+   Interaction Strength: 1.25
+   latitude main effect: 6.79
+   neighborhood_price_mean main effect: 26.21
+   Relative to main: 18.4%
+
+31. accommodates × neighborhood_price_mean
+   Interaction Strength: 1.23
+   accommodates main effect: 34.36
+   neighborhood_price_mean main effect: 26.21
+   Relative to main: 3.6%
+
+1331. latitude × longitude
+   Interaction Strength: 1.22
+   latitude main effect: 6.79
+   longitude main effect: 4.22
+   Relative to main: 18.0%
+
+68. bedrooms_filled × bathrooms_per_bedroom
+   Interaction Strength: 1.18
+   bedrooms_filled main effect: 43.77
+   bathrooms_per_bedroom main effect: 2.08
+   Relative to main: 2.7%
+
+1332. latitude × distance_from_center
+   Interaction Strength: 1.15
+   latitude main effect: 6.79
+   distance_from_center main effect: 19.56
+   Relative to main: 16.9%
+
+531. amenity_count × has_dishwasher
+   Interaction Strength: 1.04
+   amenity_count main effect: 5.69
+   has_dishwasher main effect: 7.87
+   Relative to main: 18.3%
+
+1300. has_dishwasher × neighborhood_price_mean
+   Interaction Strength: 1.01
+   has_dishwasher main effect: 7.87
+   neighborhood_price_mean main effect: 26.21
+   Relative to main: 12.9%
+
+57. accommodates × review_recency
+   Interaction Strength: 0.94
+   accommodates main effect: 34.36
+   review_recency main effect: 8.42
+   Relative to main: 2.7%
+
+1396. distance_from_center × neighborhood_price_mean
+   Interaction Strength: 0.93
+   distance_from_center main effect: 19.56
+   neighborhood_price_mean main effect: 26.21
+   Relative to main: 4.7%
+
+1432. neighborhood_price_mean × reviews_per_month
+   Interaction Strength: 0.88
+   neighborhood_price_mean main effect: 26.21
+   reviews_per_month main effect: 4.88
+   Relative to main: 3.3%
+
+40. accommodates × avg_review_score
+   Interaction Strength: 0.87
+   accommodates main effect: 34.36
+   avg_review_score main effect: 7.01
+   Relative to main: 2.5%
+
+1406. distance_from_center × availability_365
+   Interaction Strength: 0.83
+   distance_from_center main effect: 19.56
+   availability_365 main effect: 8.74
+   Relative to main: 4.2%
+
+================================================================================
+DETAILED INTERPRETATION - TOP 5 INTERACTIONS
+================================================================================
+
+INTERACTION #63: bedrooms_filled × bathrooms
+Strength: 4.70
+
+INTERPRETATION:
+  The value of bedrooms changes based on bathroom count
+  Example: 3BR with 1 bath ≠ 3BR with 2 baths
+  Business insight: Bathroom/bedroom ratio matters
+
+--------------------------------------------------------------------------------
+
+INTERACTION #1: accommodates × bedrooms_filled
+Strength: 3.80
+
+INTERPRETATION:
+  These features influence each other's price impact
+  Check dependence plot colored by second feature
+  Business insight: Combined effect ≠ sum of parts
+
+--------------------------------------------------------------------------------
+
+INTERACTION #91: bedrooms_filled × neighborhood_price_mean
+Strength: 3.70
+
+INTERPRETATION:
+  This feature's impact depends on neighborhood quality
+  Example: Gym matters MORE in premium neighborhoods
+  Business insight: Context-dependent amenity value
+
+--------------------------------------------------------------------------------
+
+INTERACTION #3: accommodates × bathrooms
+Strength: 2.97
+
+INTERPRETATION:
+  These features influence each other's price impact
+  Check dependence plot colored by second feature
+  Business insight: Combined effect ≠ sum of parts
+
+--------------------------------------------------------------------------------
+
+INTERACTION #1364: longitude × distance_from_center
+Strength: 2.15
+
+INTERPRETATION:
+  Distance effect varies by other location factors
+  Example: Being far from center hurts LESS in good neighborhoods
+  Business insight: Distance penalty is conditional
+
+--------------------------------------------------------------------------------
+
+Saved: shap_interactions_ranked.csv
+
+CLUSTER ANALYSIS - MARKET SEGMENTS
+
+Optimal clusters: 2
+
+================================================================================
+CLUSTER 0: 347 listings (69.4%)
+================================================================================
+
+PRICE STATISTICS:
+  Mean: £182.14
+  Median: £152.00
+  Std: £135.54
+  Range: £32 - £1075
+
+PROPERTY CHARACTERISTICS:
+  Avg Bedrooms: 1.7
+  Avg Bathrooms: 1.4
+  Avg Capacity: 4.0
+
+TOP POSITIVE PRICE DRIVERS:
+  accommodates: +£9.71
+  bedrooms_filled: +£8.24
+  distance_from_center: +£2.22
+  longitude: +£1.96
+  has_dishwasher: +£1.83
+
+TOP NEGATIVE PRICE DRIVERS:
+  availability_365: £-3.09
+  review_recency: £-2.70
+  bathrooms: £-1.91
+  response_time_score: £-1.79
+  avg_review_score: £-1.73
+
+SEGMENT LABEL: PREMIUM MEDIUM
+
+--------------------------------------------------------------------------------
+
+================================================================================
+CLUSTER 1: 153 listings (30.6%)
+================================================================================
+
+PRICE STATISTICS:
+  Mean: £163.02
+  Median: £90.00
+  Std: £188.43
+  Range: £30 - £1000
+
+PROPERTY CHARACTERISTICS:
+  Avg Bedrooms: 1.4
+  Avg Bathrooms: 1.3
+  Avg Capacity: 2.6
+
+TOP POSITIVE PRICE DRIVERS:
+  review_recency: +£9.29
+  availability_365: +£8.11
+  amenity_count: +£5.15
+  reviews_per_month: +£4.20
+  response_time_score: +£4.11
+
+TOP NEGATIVE PRICE DRIVERS:
+  accommodates: £-13.26
+  neighborhood_price_mean: £-11.62
+  bedrooms_filled: £-9.98
+  distance_from_center: £-5.12
+  has_dishwasher: £-4.62
+
+SEGMENT LABEL: PREMIUM SMALL/STUDIO
+
+--------------------------------------------------------------------------------
+
+================================================================================
+CLUSTER SUMMARY TABLE
+================================================================================
+
+ Cluster  Count   Pct Avg_Price              Segment
+       0    347 69.4%      £182       PREMIUM MEDIUM
+       1    153 30.6%      £163 PREMIUM SMALL/STUDIO
+
+Saved: cluster_summary.csv
+
+================================================================================
+FEATURE IMPORTANCE BY CLUSTER
+================================================================================
+
+Shows which features matter MOST in each market segment
+
+CLUSTER 0 - TOP 10 DRIVERS:
+  1. bedrooms_filled: 39.54
+  2. accommodates: 28.90
+  3. neighborhood_price_mean: 25.60
+  4. distance_from_center: 19.17
+  5. bathrooms: 12.78
+  6. avg_review_score: 8.40
+  7. has_dishwasher: 8.05
+  8. latitude: 7.76
+  9. review_recency: 6.50
+  10. availability_365: 6.42
+
+CLUSTER 1 - TOP 10 DRIVERS:
+  1. bedrooms_filled: 32.23
+  2. accommodates: 29.86
+  3. neighborhood_price_mean: 23.33
+  4. distance_from_center: 20.08
+  5. availability_365: 13.11
+  6. review_recency: 10.34
+  7. bathrooms: 8.57
+  8. response_time_score: 8.08
+  9. instant_bookable_num: 7.48
+  10. has_dishwasher: 7.14

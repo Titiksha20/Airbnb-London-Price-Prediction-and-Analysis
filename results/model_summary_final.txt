@@ -1,0 +1,27 @@
+OPTION C: Best Balance Model Results
+============================================================
+
+Test R2:    0.6685
+Test RMSE:  £86.17
+Test MAE:   £49.82
+Overfit:    0.0697
+CV R2:      0.6542 (+/- 0.0085)
+Features:   70
+
+Parameters:
+  n_estimators: 200
+  max_depth: 6
+  learning_rate: 0.05
+  reg_lambda: 0.5
+
+Top 10 Features:
+  competition_intensity: 0.1072
+  bedrooms_filled: 0.1071
+  size_value_score: 0.0800
+  neighborhood_price_mean: 0.0680
+  bathrooms: 0.0434
+  has_gym: 0.0290
+  accommodates: 0.0275
+  superhost_high_rating: 0.0240
+  has_dishwasher: 0.0236
+  has_tv: 0.0222

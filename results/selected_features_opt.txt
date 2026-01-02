@@ -1,0 +1,33 @@
+Selected Features (31)
+
+1. is_large
+2. bedrooms_filled
+3. neighborhood_price_mean
+4. bathrooms
+5. has_gym
+6. listings_in_neighborhood
+7. accommodates
+8. superhost_high_rating
+9. large_premium
+10. has_dishwasher
+11. has_tv
+12. superhost_num
+13. estimated_bookings_monthly
+14. luxury_central
+15. booking_rate_proxy
+16. is_flexible
+17. distance_from_center
+18. instant_bookable_num
+19. is_longstay_only
+20. availability_365
+21. bedrooms_per_person
+22. review_recency
+23. is_professional
+24. is_studio_flag
+25. is_small_1bed
+26. is_medium_2_3bed
+27. is_large_4plus
+28. is_multi_bathroom
+29. is_luxury_bathrooms
+30. is_luxury_property
+31. size_value_score
