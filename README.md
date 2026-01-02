@@ -6,7 +6,7 @@ Machine learning model for predicting optimal nightly prices of Airbnb listings 
 
 This project develops a production-ready pricing model that predicts Airbnb nightly rates with 67% accuracy (R² = 0.667) and provides actionable business insights through SHAP analysis. The model is deployed as an interactive Streamlit web application.
 
-**Live Demo:** [https://airbnb-london-price-prediction-and-analysis.streamlit.app/]
+**Live Demo:** [Streamlit_App](https://airbnb-london-price-prediction-and-analysis.streamlit.app/)
 
 ## Key Results
 
