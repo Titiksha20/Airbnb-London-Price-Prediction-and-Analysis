@@ -122,8 +122,7 @@ SHAP (SHapley Additive exPlanations) analysis:
 
 ```bash
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/airbnb-london-pricing.git
-cd airbnb-london-pricing
+git clone https://github.com/Titiksha20/Airbnb-London-Price-Prediction-and-Analysis.git
 
 # Install dependencies
 pip install -r requirements.txt
@@ -179,7 +178,7 @@ python streamlit/create_neighbourhood_lookup.py
 python streamlit/save_model.py
 
 cd streamlit
-streamlit run streamlit/streamlit_app_enhanced.py
+streamlit run streamlit_app_enhanced.py
 ```
 
 The streamlit site provides:
