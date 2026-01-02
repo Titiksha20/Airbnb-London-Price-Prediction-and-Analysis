@@ -11,7 +11,7 @@ This project develops a production-ready pricing model that predicts Airbnb nigh
 ## Key Results
 
 - **Model Performance:** R² = 0.667, RMSE = £86.40, Overfit = 0.071
-- **Dataset:** 60,796 London Airbnb listings (September 2024)
+- **Dataset:** 60,796 London Airbnb listings (2025)
 - **Features:** 70 engineered features from property, location, amenities, host, and review data
 - **Deployment:** Interactive Streamlit app with predictions and explanations
 
