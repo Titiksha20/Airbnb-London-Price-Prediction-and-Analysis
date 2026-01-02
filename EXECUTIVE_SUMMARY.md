@@ -3,7 +3,7 @@
 
 ## BUSINESS PROBLEM
 
-Pricing model that predicts optimal nightly rates based on 70+ property features, achieving 67% prediction accuracy with business-actionable insights.
+Airbnb hosts in London struggle to price their properties optimally. Underpricing leaves money on the table (estimated £2,000-5,000/year lost revenue per property). Overpricing reduces bookings and hurts rankings. Manual pricing is time-consuming and inconsistent. Pricing model that predicts optimal nightly rates based on 70+ property features, achieving 67% prediction accuracy with business-actionable insights.
 
 ---
 
@@ -193,13 +193,4 @@ This project demonstrates **production-quality machine learning** applied to a r
 
 ---
 
-## CONTACT & LINKS
-
-- **GitHub:** [repository link]
-- **Live Demo:** [Streamlit Cloud URL]
-- **LinkedIn:** [Your profile]
-- **Blog Post:** [Medium/personal blog]
-- **Email:** [your email]
-
----
 
